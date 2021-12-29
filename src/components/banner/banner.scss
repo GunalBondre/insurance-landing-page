@@ -1,0 +1,51 @@
+.banner {
+  color: var(--white);
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    width: 90% !important;
+    margin: auto;
+  }
+  &__wrapper {
+    display: flex;
+    background-color: var(--dark-violet);
+    padding: 5rem 0;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      margin-left: auto;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+      button {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .title1 {
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+  .btn {
+    text-transform: uppercase;
+  }
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    max-width: 38rem;
+    overflow: hidden;
+    z-index: 99;
+    @media (max-width: 767px) {
+      max-width: 15rem;
+      top: 0;
+    }
+  }
+}
